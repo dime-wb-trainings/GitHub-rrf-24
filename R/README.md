@@ -1,5 +1,7 @@
 # Reproducible Research Fundamentals 2024 - R
 
+Learning gitflow
+
 Welcome to the **Reproducible Research Fundamentals 2024** training repository. This repository will guide you through all the exercises across the following stages:
 
 - **0. GitHub Workflow**: Gain essential GitHub skills, including how to create branches, commit changes, and open pull requests.
