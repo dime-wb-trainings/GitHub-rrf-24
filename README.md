@@ -1,7 +1,5 @@
----
-title: "Reproducible Research Fundamentals 2024"
-author: "GitHub in a project README"
----
+# Reproducible Research Fundamentals 2024
+## Using GitHub for Collaborative Research - README
 
 ## Introduction
 
