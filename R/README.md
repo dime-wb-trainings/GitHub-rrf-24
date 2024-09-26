@@ -10,5 +10,5 @@ Welcome to the **Reproducible Research Fundamentals 2024** training repository. 
 
 Feel free to update this README as you progress through the sessions and customize it to reflect the details of your project. For more details on the elements required for a reproducibility package, refer to our [README template](https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/README_Template.md), which you will cover in the **Reproducibility Package** session.
 
-Remember this is what you will share with your peer at the end of the training for review. 
+Remember this is what you will share with your peer at the end of the training for review so this needs to be updated before sharing. 
 

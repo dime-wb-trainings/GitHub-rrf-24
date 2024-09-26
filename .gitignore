@@ -49,9 +49,14 @@
 !/**/*.R
 !/**/*.Rmd
 !/**/*.Rproj
+!/**/*.Rproj
 !/**/renv.lock
 !/**/.Rprofile
 !/**/renv/settings.json
+# Still ignore user file for R projects
+.Rproj.user
+# Still ignore renv/library
+/**/renv/library/
 
 # LaTeX
 !/**/*.tex
