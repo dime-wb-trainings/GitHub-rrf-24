@@ -23,6 +23,31 @@
 				// otherwise multiplied by value of hectare in acres
 			// 2. USD conversion factor.
 	
+		global acre_conv ???
+	
+	di $acre_conv
+	
+	generate 	area_acre = ??? 				if ??? == 1 , after(ar_farm)
+	replace 	area_acre = ??? * $acre_conv 	if ??? == 2
+	
+	lab var		area_acre ???
+	
+	* Consumption in usd
+	global usd ???
+	
+	foreach cons_var in ??? ??? {
+		
+		* Save labels 
+		local `cons_var'_lab: variable label `cons_var'
+		
+		* generate vars
+		gen `cons_var'_usd = ??? * ??? , after(???)
+		
+		* apply labels to new variables
+		lab var `cons_var'_usd ???
+		
+	}
+	
 	// Exercise 3: Handle outliers ----
 		// you can use custom Winsorization function to handle outliers.
 
@@ -40,6 +65,7 @@
 	
 	//Save tempfile	
 	
+	
 *-------------------------------------------------------------------------------	
 * Data construction: HH - mem
 *------------------------------------------------------------------------------- 	
@@ -52,29 +78,42 @@
 				// 3. Average sick days.
 				// 4. Total treatment cost in USD.
 	use "${data}/Intermediate/TZA_CCT_HH_mem.dta", clear
-	
-	// Collapse to hh level for total treatment cost
-				// any member sick, can read/write
-				// average sick days	
+	collapse 	(sum) ??? ///
+				(max) ??? ///
+				(mean) m_cost = ??? ???, by(???)
 				
-				// Cost in USD
+	replace treat_cost = ??? if mi(???)	
+	
+				//Cost in USD
+	gen ??? = ??? * ???
 
 				// Add labels	
+				
+	lab var ??? 		???
+	lab var ??? 		???
+	lab var ??? 		???
+	lab var ??? 		???
+	
+	drop ??? ??? 
+
 				// Save tempfile  
 	
 	
 *-------------------------------------------------------------------------------	
 * Data construction: merge all hh datasets
 *------------------------------------------------------------------------------- 	
-	
+		use `hh', clear 
+
 	// Exercise 5: Merge HH and HH-member data ----
 		// Instructions:
 			// Merge the household-level data with the HH-member level indicators.
+	merge ??? ??? using ???, assert(3) nogen 
+			
 			// Merge hh and member data with the treatment data, ensure the treatment status is included in the final dataset.
- 
+ 	merge ??? ??? using ???, assert(3) nogen 
+
 	
 			//Save data
-	save "${data}/Final/TZA_CCT_analysis.dta", replace
 
 *-------------------------------------------------------------------------------	
 * Data construction: Secondary data
@@ -85,6 +124,9 @@
 		// Instructions:
 			// Calculate the total number of medical facilities by summing relevant columns.
 			// Apply appropriate labels to the new variables created.
+			
+	egen ??? = ???(??? ???)
+	lab var ??? ???
 	
 	// Exercise 6: Save final dataset ----
 		// Instructions:
