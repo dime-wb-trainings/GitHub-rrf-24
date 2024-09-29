@@ -3,96 +3,108 @@
 
 ## Introduction
 
-Welcome to the DIME Analytics training on GitHub and reproducible workflows. Over the next four days, you will learn how to implement transparent and reproducible workflows. This starts with essential GitHub skills and how to apply them in your data projects. The end goal is for you to use GitHub to work on all stages of the data workflow, from data management to cleaning, tidying, constructing indicators, analysis, and exporting reproducible outputs.
+Welcome to the DIME Analytics training on GitHub and reproducible workflows. Over the next four days, you will learn how to implement transparent and reproducible workflows. This starts with essential GitHub skills and how to apply them in your data projects. The goal is for you to use GitHub across all stages of the data workflow—starting from data management to cleaning, tidying, constructing indicators, analysis, and exporting reproducible outputs.
 
-This repository will be your workspace for the entire training. Follow the steps outlined below to set up your environment. Once set up, you will continue to work on this repository for the remainder of the sessions.
+This repository will serve as your workspace throughout the entire training. Follow the steps outlined below to set up your environment. Once set up, you will continue to work on this repository for the remainder of the sessions.
 
 ## Project Overview
 
-In this part of the training, you will learn to:
+You will use this repository locally for the rest of the training, so it is crucial to follow the instructions to import the repository to your machine. We will guide you step by step in the "Using GitHub for Collaborative Research" training, but the instructions are also provided below in case you miss any part.
 
-- Clone a GitHub repository.
+
+## Using GitHub for Collaborative Research Training
+
+In this training, you will learn to:
+
+- Clone and **import** a GitHub repository.
 - Create a branch for your work.
 - Make commits and push changes.
 - Follow a structured workflow for reproducibility.
 
-## Training Day 1: Intro to GitHub
-
 ### Setting Up Your GitHub Repository
 
-### 1. Clone the Repository
+❗❗**Important Exercise** You will use this repository throughout the training so please follow the steps (we will guide you during the session)
 
-1. Go to the GitHub repository: [GitHub-rrf24](https://github.com/dime-wb-trainings/GitHub-rrf-24).
-2. Click the green "Code" button and select "Open with GitHub Desktop."
-3. Follow the prompts to clone the repository to your local machine.
+**Note** Normally, we clone a repository to collaborate with peers (which we covered in the training). However, for the rest of the week, we will use another download method—"import." In this case, the repository will start to live in your personal GitHub account, as if you created the repository yourself. It will no longer be linked to the DIME training repository. 
 
-![](img/clone.png)
+We use this method because, as many of you are new to GitHub, having all you working in one shared repository could become messy. This way, you will have your own repository where you can work independently!
 
-You will now have a local copy of the repository to work on.
+### 1. Import the Repository
 
-### 2. Create a New Branch
+1. Go to the GitHub import page: [GitHub Importer](https://github.com/new/import).
+2. In the `The URL for your source repository*` field, paste the following URL: `https://github.com/dime-wb-trainings/GitHub-rrf-24`.
+3. Under `Owner`" select your personal GitHub account from the dropdown.
+4. In the "Repository name" field, choose the name for your personal repository (`GitHub-rrf24-yourname`).
+5. Click **Begin Import**.
+6. Once the import is complete, your new repository will be available under your GitHub account.
 
-1. After cloning the repository, you need to create a branch where you will work.
-2. Open GitHub Desktop.
-3. Click on the "Current Branch" dropdown.
-4. Type `rrf24_<your_initials>` and click "Create new branch."
+![](img/import2.png)
+
+### 2. Set Up Locally
+
+1. Go to your new personal repository on GitHub.`https://github.com/your-username/GitHub-rrf-24-yourname`
+2. Click the green "Code" button and select **Open with GitHub Desktop** or copy the URL to clone the repository to your local machine.
+3. Follow the prompts to clone the repository locally and ensure it is set up for the rest of the training.
+
+![](img/clone_import.png)
+
+You will now have a local copy of the repository to work on for the rest of the week.
+
+![](img/local-copy.png)
+
+### 3. Creating a Branch in the project
+
+As we mentioned in the training, we avoid commiting and pushing changes to the main branch. 
+During this training and your projects we recommend you to follow the principle branch often merge often. Now follow this exercise to start branching in your project. 
+
+2. Open github.com
+3. Go to the branch button and click on the arrow.
+4. Type `intro_github` and click `create branch intro_github from main`
+
 
 ![](img/create_branch.png)
 
-- After you click, this pop-up will appear. Select "create branch"
+4. Go to GitHub Desktop and click `fetch origin` 
+5. Now you are working locally with your branch. 
 
 ![](img/create_branch2.png)
 
-- After you create a branch, GitHub will move you to that branch, but you can also switch between branches.
+- You can also switch between branches.
 
 ![](img/change_branch.png)
 
 **Important**: You will continue working on your branch(es) for the rest of the training, and it will be reviewed by a peer at the end. In the next GitHub session, we will cover more advanced workflows, but **avoid committing to the main branch**. Only commit to your own branch(es).
 
-### 3. Make a Minor Change and Commit
-
-0. Make sure your branch is checked out (the tick is on your branch)
-1. Open the `language>README.md` file in your cloned repository in the folder of your language chosen. (Stata or R)
-2. Add a line at the top: `### Reproducible Research Fundamentals 2024 <your_name>.`
-3. Save the file.
-4. Go back to GitHub Desktop, and you will see the change.
-5. Add a description and message to your commit `Add: name to README` 
-6. Click "Commit to <your_branch>".
-
-![](img/commit.png)
-
-You have now successfully set up your repository, created a branch, and made your first commit!
-
-### 4. Push/Publish Your Changes
-
-6. After committing, click the "Push" button in GitHub Desktop to publish your changes on github.com.
-
-![](img/push.png)
-
 ---
 
 ## Key Reminders for the Week
 
-- **You will continue working in your branch/branches for all sessions.**
+- **You will be working on this repository throughout most of the hands-on sessions.**
 - Each session will build on the previous one, and by the end, you will create a reproducibility package.
-- Make sure to **commit and push** changes regularly to keep your work up-to-date and trackable.
+- Make sure to regularly *create branches*, *commit and push changes*, and *merge* them to keep your work organized and trackable.
+- While you don’t need to branch excessively since this is your own project, we recommend the following workflow:
+  - Create a new branch for each session, for example:
+    - `rrf24_processing` → make changes and `commit` → merge back to `main`
+    - `rrf24_construction` → make changes and `commit` → merge back to `main`
+    - `rrf24_analysis`→ make changes and `commit` → merge back to `main`
+    - `rrf24_create_package` → make changes and `commit` → merge back to `main``
 
 ---
 
 ## Overview of Upcoming Sessions
 
-1. **GitHub Workflow**: Explore best practices for GitHub collaboration, branching, and merging.
-2. **Setting a reproducible environment**: Start projects clean, share package versions, and ensure reproducibility across systems and time.
-3. **Data Processing**: Learn how to tidy and clean your data.
-4. **Preparing Data for Analysis**: Focus on structuring your data for robust analysis.
-5. **Data Analysis**: Conduct analysis using your organized datasets.
-6. **Creating a Reproducibility Package**: Package your work following reproducibility guidelines, including a comprehensive README and proper documentation.
+1. **GitHub Workflow**: Learn best practices for collaboration, branching, and merging on GitHub.
+2. **Setting a Reproducible Environment**: Start your projects clean, share package versions, and ensure consistency across systems and time.
+3. **Data Processing**: Master tidying and cleaning your data.
+4. **Preparing Data for Analysis**: Organize and structure your data for thorough analysis.
+5. **Data Analysis**: Perform your analysis using the cleaned datasets.
+6. **Creating a Reproducibility Package**: Follow best practices to package your work, including writing a comprehensive README and proper documentation.
 
-We look forward to seeing your progress throughout the week!
+We’re excited to see your progress throughout the week!
 
 ---
 
 ### Useful Links:
 
-- DIME Analytics GitHub trainings: [DIME GitHub Trainings](https://osf.io/e54gy/)
+- DIME Analytics GitHub Trainings: [DIME GitHub Trainings](https://osf.io/e54gy/)
 - Markdown Cheat Sheet: [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
