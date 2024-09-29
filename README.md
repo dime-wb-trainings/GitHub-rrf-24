@@ -43,7 +43,7 @@ We use this method because, as many of you are new to GitHub, having all you wor
 ### 2. Set Up Locally
 
 1. Go to your new personal repository on GitHub.`https://github.com/your-username/GitHub-rrf-24-yourname`
-2. Click the green "Code" button and select **Open with GitHub Desktop** or copy the URL to clone the repository to your local machine.
+2. Click the green "Code" button and select **Open with GitHub Desktop**
 3. Follow the prompts to clone the repository locally and ensure it is set up for the rest of the training.
 
 ![](img/clone_import.png)
