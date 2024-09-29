@@ -87,7 +87,7 @@ During this training and your projects we recommend you to follow the principle 
     - `rrf24_processing` → make changes and `commit` → merge back to `main`
     - `rrf24_construction` → make changes and `commit` → merge back to `main`
     - `rrf24_analysis`→ make changes and `commit` → merge back to `main`
-    - `rrf24_create_package` → make changes and `commit` → merge back to `main``
+    - `rrf24_create_package` → make changes and `commit` → merge back to `main`
 
 ---
 
