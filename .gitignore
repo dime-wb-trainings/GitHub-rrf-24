@@ -93,6 +93,8 @@
 !/**/Outputs/**/*.xml
 !/**/Outputs/**/*.eps
 !/**/Outputs/**/*.svg
+!/**/Outputs/**/*.tex
+!/**/Outputs/**/*.png
 
 #######################
 # Include all the files with passwords or tokens here. All files named
